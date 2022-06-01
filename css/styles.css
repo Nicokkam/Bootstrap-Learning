@@ -40,6 +40,17 @@ body {
 
 .btn-third {
   background: #FBB425;
+  
+}
+
+.btn-fourth {
+  background: red;
+  color: floralwhite;
+}
+
+.btn-fifth {
+  background: green;
+  color: floralwhite;
 }
 
 .tab-content {
