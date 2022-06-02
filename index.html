@@ -32,7 +32,7 @@
                                 class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a href="" data-toggle="modal" data-target="#loginModal">
+                    <a id="loginModalBtn" href="#loginModal">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -194,7 +194,7 @@
         </div>
     </div>
     <!-- MODALS END -->
-
+    <!-- JUMBOTRON START -->
     <header class="jumbotron">
         <div class="container">
             <div class="row">
@@ -207,13 +207,13 @@
                     <img src="img/logo.png" class="img-fluid mx-auto d-block">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a data-toggle="modal" data-target="#reserveModal"><button role="button"
-                            class="btn btn-sm btn-block btn-third">Reserve Table</button></a>
+                    <a id="reserveModalBtn"><button role="button" class="btn btn-sm btn-block btn-third">Reserve
+                            Table</button></a>
                 </div>
             </div>
         </div>
     </header>
-
+    <!-- JUMBOTRON END -->
     <div class="container">
         <!-- CAROUSEL START -->
         <div class="row row-content">
@@ -409,7 +409,16 @@
                     $('#carouselButton').children('span').addClass('fa-pause');
                 }
             });
+
+            $('#reserveModalBtn').click(function () {
+                $('#reserveModal').modal('toggle');
+            });
+
+            $('#loginModalBtn').click(function () {
+                $('#loginModal').modal('toggle');
+            });
         });
+
     </script>
 </body>
 

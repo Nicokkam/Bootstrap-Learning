@@ -47,6 +47,20 @@ body{
    background-color: $background-dark;
 }
 
+.btn-third {
+  background: #FBB425;
+}
+
+.btn-fourth {
+  background: red;
+  color: floralwhite;
+}
+
+.btn-fifth {
+  background: green;
+  color: floralwhite;
+}
+
 .tab-content {
   border-left: 1px solid $lt-gray;
   border-right: 1px solid $lt-gray;
@@ -73,4 +87,19 @@ body{
   position: absolute;
   bottom: 0px;
   z-index: 1;
+}
+
+.modal {
+  .modal-header {
+    background-color: $background-dark;
+    .modal-title {
+      color: floralwhite
+    }
+    .close {
+      color: floralwhite
+    }
+  }
+  .modal-body {
+    background-color: $background-pale ;
+  }
 }
